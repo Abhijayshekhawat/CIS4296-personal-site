@@ -50,3 +50,47 @@ body {
     background-color: var(--bs-primary);
     color: white;
 }
+/* Carousel Styling */
+#projectsCarousel {
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    object-fit: cover; /* Adjust as needed; cover ensures that your images cover the slide area, but you could use contain to ensure the whole image fits */
+    height: 65vh; /* Adjust based on your preference */
+    border-radius: 15px; /* Optional: Adds rounded corners to your images */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay to make text easier to read */
+    border-radius: 15px; /* Matches the image border-radius */
+    padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Change to match your color theme; provides a background color for better visibility */
+    border-radius: 50%; /* Circular background */
+}
+
+/* Ensures the indicators are visible and styled appropriately */
+.carousel-indicators [data-bs-target] {
+    background-color: #000; /* Match your site's theme */
+    width: 10px; /* Indicator dot size */
+    height: 10px; /* Indicator dot size */
+    border-radius: 50%; /* Circular dots */
+}
+.carousel-item {
+    height: 65vh; /* Example height; adjust as needed */
+    /* Adding a width is optional and depends on your design. */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Keeps the aspect ratio of the image */
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect or any other transformations */
+}
+.carousel-item img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover, adjust scale as desired */
+}
